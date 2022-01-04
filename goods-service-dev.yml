@@ -1,6 +1,5 @@
 server:
   servlet:
-    context-path: /api
     encoding:
       charset: utf-8
   # 优雅停机
