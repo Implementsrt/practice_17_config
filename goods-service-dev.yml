@@ -21,6 +21,10 @@ spring:
       time: HH:mm:ss
   # Druid连接池配置
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/practice_17
+    username: root
+    password: root
     druid:
       # 初始连接数
       initialSize: 5
@@ -101,3 +105,11 @@ mybatis-plus:
     db-config:
       insert-strategy: not_null
       where-strategy: not_empty
+
+springdoc:
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    cn.qhy: debug
